@@ -63,4 +63,8 @@ class CrudController extends Controller
             $crud->delete();
             return redirect(route('showTask'));
             }
+
+        public function master(){
+            return view('layouts.master');
+        }    
 }

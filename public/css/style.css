@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat:wght@300&family=Spectral:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+/*font-family: 'Crimson Text', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Spectral', serif;
+#5B0A13  #D1A32B #FED24B  #A8001A*
+font-family: 'Noto Sans JP', sans-serif;*/
+*{
+    padding:0;
+    margin:0;
+}
+a:link{
+    text-decoration:none;
+}
+.sideBar{
+    overflow-y: auto;
+    height:100vh;
+
+}
+
+li a{
+    
+    color:red;
+}
+.sideBar ul li {
+    padding:60px 20px;
+    list-style:none;
+}
+
+.sideBar ul li i{
+    padding:0px 10px;
+}
+.dashBoard{
+    margin-top:100px;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+.sideBar ul li ul{
+    margin:0px;
+}
+.sideBar ul li ul li{
+    padding:20px 20px;
+    list-style:none;
+}
+.sideBar ul li ul{
+    display:none;
+}
+
+.sideBar ul li:hover > ul{
+    display:block;
+    position: absolute;
+    top:80px;
+    left:218px;
+    height:100vh;
+    line-height: 10px;
+    padding:20px 20px;
+    background-color: rgb(214, 86, 86);
+    z-index:5;
+}
+.sideBar ul li::before{
+    content:"";
+    position: absolute;
+    left:400px;
+    background-color: burlywood;
+}

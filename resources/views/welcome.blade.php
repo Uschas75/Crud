@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        @include('layouts.style')
         <style>
             html, body {
                 background-color: #fff;
@@ -68,7 +69,7 @@
     </head>
     <body>
 
-                     @if (Route::has('login'))
+                    @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
                                 <a href="{{ url('/home') }}">Home</a>
@@ -83,33 +84,86 @@
                             @endif
 
 
-
-    <div class="mx-5 container">
-        <div class="row">
-            <div class="col-md-2 border-right">
-                <a href="{{route('showTask')}}"><h4>Task List</h4></a>
-                <a href="{{route('create')}}"><h4>Create Task</h4></a>
-                <a href="{{route('modify')}}"><h4>Edit Task</h4></a>
-                <a href="{{route('destroy')}}"><h4>delete  Task</h4></a>
-            </div>
-
-
-            <div class="col-md-10 ">
-                <h1>Task App</h1>   
-            </div>
-                
-               
-            </div>   
-        </div>
-    </div>       
+                            <div class="d-flex">
+    
+    <!--sidebar-->
+    <div class="sideBar" >
+        <ul>
+        <li class="border text-center ">
+            <a href="{{route('showTask')}}" class="dashBoard">
+                <i class="fas fa-chart-line d-block"></i>
+                <span class="d-block">Task List</span>
+            </a>
+            <ul>
+            <li class="border-bottom"> Lorem </li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            </ul>
+        </li>
+        <li class="border text-center">
+            <a href="{{route('create')}}" class="dashBoard">
+                <i class="fab fa-uikit d-block"></i>
+                <span class="d-block">Create Task</span>
+            </a>
+            <ul>
+            <li class="border-bottom"> Lorem </li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            </ul>
+        </li>
+        <li class="border text-center">
+            <a href="{{route('modify')}}" class="dashBoard">
+                <i class="fas fa-medkit d-block"></i>
+                <span class="d-block">Edit Task</span>
+            </a>
+            <ul>
+            <li class="border-bottom"> Lorem </li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            </ul>
+        </li>
+        <li class="border text-center">
+            <a href="{{route('destroy')}}" class="dashBoard">
+                <i class="fas fa-apple-alt d-block"></i>
+                <span class="d-block">Delete</span>
+            </a>
+            <ul>
+            <li class="border-bottom"> Lorem </li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            </ul>
+        </li>
+        <li class="border text-center">
+            <a href="#" class="dashBoard">
+                <i class="fab fa-wpforms d-block"></i>
+                <span class="d-block">Forms</span>
+            </a>
+            <ul>
+            <li class="border-bottom"> Lorem </li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            <li class="border-bottom"> puss</li>
+            </ul>
+        </li>
         
+        </ul>
 
-                
-            
-            
-               
-       
-
+    </div>
+    <!--/sidebar-->
         
             <!--bootstrap js-->
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

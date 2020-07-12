@@ -36,3 +36,4 @@ Route::delete('/delete/{id}','CrudController@delete')->name('delete');
 
 
 
+Route::get('/master','CrudController@master')->name('master');
